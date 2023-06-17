@@ -1,0 +1,155 @@
+@font-face {
+    font-family: xolonium;
+    src: url(../assets/fonts/Xolonium-Regular.ttf);
+}
+
+* {
+    font-family: 'Arial', sans-serif;
+    color: #ffffff;
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    height: 100%;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000000;
+    z-index: 99;
+    padding: 0 20px;
+}
+
+header * {
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.app-name a {
+    text-decoration: none;
+    color: #ff2121;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+header button {
+    margin-right: 20px;
+    font-size: 1.4rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    min-height: 100vh;
+}
+
+#top-bar {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ff2121;
+    z-index: 10;
+}
+
+#top-bar * {
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+#top-bar *:hover {
+    color: #ff6464;
+}
+
+.anchor {
+    display: block;
+    height: 200px; /* same height as header */
+    margin-top: -200px; /* same height as header */
+    visibility: hidden;
+}
+
+#data-container {
+    position: relative;
+    margin-top: 200px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#image {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    margin-left: 30px;
+    padding: 50px;
+    align-items: center;
+}
+
+#fav_btn {
+    margin-top: 30px;
+    background-color: transparent;
+    border: 2px solid #ff2121;
+    border-radius: 50%;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+#fav_btn:hover {
+    background-color: #ff2121;
+}
+
+#detail-container {
+    position: relative;
+    width: 75%;
+    padding: 30px;
+}
+
+.detail-item {
+    margin-bottom: 20px;
+}
+
+#stats-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    width: 100%;
+}
+
+#stat-names {
+    display: flex;
+    flex-direction: column;
+    width: fit-content
+}
